@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
 
 :root {
   --header-height: 3rem;
@@ -58,6 +58,38 @@
   }
 }
 
+.Commitment {
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px; /* Set a max width for better readability */
+  margin: 0 auto; /* Center the section */
+  text-align: center; /* Center the text */
+}
+
+.Commitment h2 {
+
+  margin-bottom: 1rem;
+  font-size: var(--h1-font-size);
+  
+}
+
+.Commitment p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.Commitment ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left; /* Align the list items to the left */
+  display: inline-block; /* Center the list */
+}
+
+.Commitment li {
+  margin-bottom: 0.5rem;
+}
+
+
 /* Variables Dark Theme */
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -108,6 +140,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  background: url('https://beeimg.com/images/q63070309723.png') repeat 0 0;
+  animation: 10s linear 0s normal none infinite animate;
   color: var(--text-color);
 }
 
@@ -1038,4 +1072,8 @@ button {
   .contact_inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@keyframes animate {
+  from { background-position: 0 0; }
+  to { background-position: 500px 0; }
 }
